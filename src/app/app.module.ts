@@ -7,20 +7,21 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { PageArrayType, getPageArray } from './app.page.router';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage
-  ],
+  ].concat(getPageArray(PageArrayType.Module_Declarations)),
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,{},{links:getPageArray(PageArrayType.IonicModuleLink)})
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage
-  ],
+    MyApp,HomePage
+  ].concat(getPageArray(PageArrayType.Module_EntryComponents)),
   providers: [
     StatusBar,
     SplashScreen,

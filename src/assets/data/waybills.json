@@ -1,0 +1,74 @@
+[
+  {
+    "sendDate":"2017-5-26",
+    "sn" : "000001",
+    "carrier": {
+      "id":1,
+      "name": "BlueSky"
+    },
+    "sender":{
+      "id":1,
+      "name":"me",
+      "nameAlias": "me",
+      "idCardSn":"",
+      "mobile":"045263589"
+    },
+    "receiver":{
+      "id":11,
+      "name":"huang",
+      "nameAlias": "huang",
+      "idCardSn":"423651198012053025",
+      "mobile":"13915896542"
+    },
+    "shipItemList":[
+      {
+        "item": {"id":1,  "name": "cream"},
+        "qty": 4,
+      },
+      {
+        "item": {"id":2,  "name": "shampoo"},
+        "qty": 4,
+      },
+    ],
+    "packageCost":0, 
+    "weight":3.5,
+    "estiShipCost":0,
+    "finalShipCost":12.5, 
+  },
+  {
+    "sendDate":"2017-3-1",
+    "sn":"000002",
+    "carrier": {
+      "id":1,
+      "name": "BlueSky"
+    },
+    "sender":{
+      "id":1,
+      "name":"me",
+      "nameAlias": "me",
+      "idCardSn":"",
+      "mobile":"045263589"
+    },
+    "receiver":{
+      "id":12,
+      "name":"yang",
+      "nameAlias": "yang",
+      "idCardSn":"369852195612113652",
+      "mobile":"13524586936"
+    },
+    "shipItemList":[
+      {
+        "item": {"id":1,  "name": "cream"},
+        "qty": 1,
+      },
+      {
+        "item": {"id":4,  "name": "cookie"},
+        "qty": 2,
+      },
+    ],
+    "packageCost":0, 
+    "weight":2.5,
+    "estiShipCost":0,
+    "finalShipCost":8.5, 
+  }
+]

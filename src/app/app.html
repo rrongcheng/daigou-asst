@@ -1,1 +1,21 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-split-pane>
+  <ion-menu id='publicMenu' [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-list-header></ion-list-header>
+        <button ion-item menuClose *ngFor="let menuPage of menuPublicPages" (click)="openPage(menuPage.page)">
+          <ion-icon item-start [name]="menuPage.icon" [color]="isActive(menuPage.page)"></ion-icon>
+          {{menuPage.title}}
+        </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <!-- main navigation -->
+  <ion-nav [root]="rootPage" #content swipeBackEnabled="false" main></ion-nav>
+</ion-split-pane>
